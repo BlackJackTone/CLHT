@@ -587,6 +587,8 @@ ht_resize_pes(clht_t* h, int is_increase, int by)
 	 clht_gc_get_id(), ht_new->num_buckets, mba, (unsigned long long) e, e / 2.1e9);
 
 
+	fprintf(stderr, "weuryweo %d", CLHT_DO_GC);
+
 #if CLHT_DO_GC == 1
   clht_gc_collect(h);
 #else
