@@ -650,7 +650,7 @@ ht_status(clht_t* h, int resize_increase, int just_print)
   for (bin = 0; bin < num_buckets; bin++)
     {
       bucket = hashtable->table + bin;
-
+fprintf(stderr, "bububub %p\n", bucket);
       int expands_cont = -1;
       expands--;
       uint32_t j;
