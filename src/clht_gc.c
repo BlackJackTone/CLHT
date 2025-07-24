@@ -276,6 +276,7 @@ clht_gc_release(clht_hashtable_t* hashtable)
   	{
   	  volatile bucket_t* cur = bucket;
   	  bucket = bucket->next;
+		printf("lalalal %p", cur);
   	  ssmem_release(clht_alloc, (void*) cur);
   	}
     }
